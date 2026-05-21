@@ -1,2 +1,2 @@
 # Kismet
-Kismet公式HP
+Kismetの公式HP
