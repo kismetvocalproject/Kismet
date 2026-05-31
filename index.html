@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KISMET | Official Website</title>
     
-    <!-- Instagram OGP Settings -->
     <meta property="og:title" content="KISMET | Official Website">
     <meta property="og:description" content="May Kismet's voices reach those who need them.">
     <meta property="og:image" content="jacket.png">
@@ -38,34 +37,28 @@
         body { background-color: #121212; color: #f3f4f6; scroll-behavior: smooth; }
         .hero-overlay { background: linear-gradient(to bottom, rgba(18,18,18,0.3) 0%, rgba(18,18,18,1) 100%); }
         .glow-text { text-shadow: 0 0 20px rgba(155, 93, 229, 0.6); }
-        
-        /* ネオンアイコン：常時発光の強化 */
-        .icon-glow { 
-            color: #9b5de5; 
-            filter: drop-shadow(0 0 12px rgba(155, 93, 229, 0.9));
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .icon-glow:hover { 
-            color: #ffffff;
-            filter: drop-shadow(0 0 25px rgba(155, 93, 229, 1));
-            transform: scale(1.15) translateY(-5px);
-        }
+        .icon-glow:hover { filter: drop-shadow(0 0 10px rgba(155, 93, 229, 0.9)); transform: scale(1.1); }
     </style>
 </head>
 <body class="antialiased">
-    <!-- Navigation: 右上のXを消去し、Instagramのみを配置 -->
     <nav class="fixed w-full z-50 bg-black/50 backdrop-blur-md" id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 <a href="#home" class="font-handwriting text-4xl text-white tracking-widest hover:text-kismet-purple transition-colors">KISMET</a>
                 <div class="flex items-center space-x-6">
                     <div class="hidden md:flex space-x-8 mr-6">
-                        <a href="#home" class="text-gray-300 hover:text-white transition-colors text-xs font-bold tracking-widest">HOME</a>
-                        <a href="#music" class="text-gray-300 hover:text-white transition-colors text-xs font-bold tracking-widest">MUSIC</a>
+                        <a href="#home" class="text-gray-300 hover:text-white transition-colors">HOME</a>
+                        <a href="#music" class="text-gray-300 hover:text-white transition-colors">MUSIC</a>
                     </div>
-                    <div class="flex items-center border-l border-gray-700 pl-5">
-                        <a href="https://www.instagram.com/kismet.vocal.project/" target="_blank" class="icon-glow">
-                            <i data-lucide="instagram" class="w-6 h-6" stroke-width="2.5"></i>
+                    <div class="flex items-center space-x-4 border-l border-gray-700 pl-6">
+                        <a href="https://www.instagram.com/kismet.vocal.project/" target="_blank" class="text-gray-400 hover:text-kismet-purple transition-colors" aria-label="Instagram">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        </a>
+                        <a href="https://x.com/KismetVocal" target="_blank" class="text-gray-400 hover:text-kismet-purple transition-colors" aria-label="X">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="https://www.tiktok.com/@kismetproject" target="_blank" class="text-gray-400 hover:text-kismet-purple transition-colors" aria-label="TikTok">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.03 1.63 4.14 1.13 1.2 2.7 1.93 4.34 2.13v3.9c-1.81-.05-3.56-.74-4.93-1.92-.18-.16-.35-.34-.51-.53v5.82c.06 2.05-.63 4.15-2 5.67-1.63 1.87-4.14 2.85-6.64 2.53-2.92-.31-5.46-2.45-6.17-5.32-.87-3.32.74-7.05 3.9-8.41 1.14-.52 2.4-.73 3.65-.63v3.91c-1.18-.21-2.43.14-3.29 1-.98.93-1.25 2.45-.66 3.69.56 1.25 1.9 2.1 3.27 1.97 1.49-.03 2.79-1.23 2.94-2.71.04-1.26.02-2.52.03-3.78V.02z"/></svg>
                         </a>
                     </div>
                 </div>
@@ -82,21 +75,20 @@
             <h1 class="font-handwriting text-8xl md:text-[10rem] text-white mb-2 glow-text tracking-tighter">KISMET</h1>
             <p class="text-xl text-kismet-purple font-bold tracking-[0.5em] mb-8 uppercase">May Kismet's voices reach those who need them.</p>
             
-            <div class="flex flex-col items-center space-y-12 mt-12">
-                <div class="inline-block border-t border-b border-gray-600 py-3 px-8">
-                    <p class="text-base text-gray-400 tracking-widest uppercase">produced by: Kismet</p>
+            <div class="flex flex-col items-center space-y-8 mt-12">
+                <div class="inline-block border-t border-b border-gray-600 py-2 px-6">
+                    <p class="text-sm text-gray-400 tracking-widest uppercase">produced by: Kismet</p>
                 </div>
                 
-                <!-- SNS Hub: センターに3つの特大ネオンアイコン -->
-                <div class="flex items-center space-x-16">
-                    <a href="https://www.instagram.com/kismet.vocal.project/" target="_blank" class="icon-glow">
-                        <i data-lucide="instagram" class="w-14 h-14" stroke-width="2"></i>
+                <div class="flex items-center space-x-10">
+                    <a href="https://www.instagram.com/kismet.vocal.project/" target="_blank" class="text-gray-400 hover:text-kismet-purple transition-all duration-300 icon-glow" aria-label="Instagram">
+                        <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
                     </a>
-                    <a href="https://x.com/KismetVocal" target="_blank" class="icon-glow">
-                        <i data-lucide="x" class="w-14 h-14" stroke-width="2"></i>
+                    <a href="https://x.com/KismetVocal" target="_blank" class="text-gray-400 hover:text-kismet-purple transition-all duration-300 icon-glow" aria-label="X">
+                        <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                     </a>
-                    <a href="https://www.tiktok.com/@kismetproject" target="_blank" class="icon-glow">
-                        <i data-lucide="music-2" class="w-14 h-14" stroke-width="2"></i>
+                    <a href="https://www.tiktok.com/@kismetproject" target="_blank" class="text-gray-400 hover:text-kismet-purple transition-all duration-300 icon-glow" aria-label="TikTok">
+                        <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.03 1.63 4.14 1.13 1.2 2.7 1.93 4.34 2.13v3.9c-1.81-.05-3.56-.74-4.93-1.92-.18-.16-.35-.34-.51-.53v5.82c.06 2.05-.63 4.15-2 5.67-1.63 1.87-4.14 2.85-6.64 2.53-2.92-.31-5.46-2.45-6.17-5.32-.87-3.32.74-7.05 3.9-8.41 1.14-.52 2.4-.73 3.65-.63v3.91c-1.18-.21-2.43.14-3.29 1-.98.93-1.25 2.45-.66 3.69.56 1.25 1.9 2.1 3.27 1.97 1.49-.03 2.79-1.23 2.94-2.71.04-1.26.02-2.52.03-3.78V.02z"/></svg>
                     </a>
                 </div>
             </div>
@@ -108,55 +100,51 @@
             <h2 class="font-handwriting text-5xl text-center text-white mb-16">Music</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12">
                 
-                <!-- Resonating Grace -->
                 <div class="bg-kismet-dark rounded-3xl p-8 border border-gray-800 flex flex-col justify-between">
                     <div>
                         <img src="resonating_grace.png" class="w-48 h-40 rounded-xl mb-6 mx-auto shadow-lg object-cover" onerror="this.src='https://images.unsplash.com/photo-1518609878373-06d740f60d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
                         <h3 class="text-2xl text-white font-bold text-center leading-tight">Resonating Grace<br><span class="text-lg font-normal text-gray-400">（レゾネイティング・グレイス）</span></h3>
-                        <p class="text-sm text-kismet-purple font-bold text-center mt-4 uppercase">1st Digital Single</p>
+                        <p class="text-sm text-kismet-purple font-bold text-center mt-4">1st Digital Single</p>
                     </div>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
-                        <a href="https://distrokid.com/hyperfollow/kismet15/resonating-grace" target="_blank" class="block text-center py-3 bg-gradient-to-r from-kismet-purple to-indigo-600 rounded-full font-bold text-sm hover:scale-[1.03] transition-all uppercase">Listen Now</a>
-                        <a href="https://www.instagram.com/p/DYyZPiAMAKY/" target="_blank" class="block text-center py-3 border border-kismet-pink text-kismet-pink rounded-full font-bold text-sm hover:bg-kismet-pink/10 transition-all uppercase">Watch Reel</a>
+                        <a href="https://distrokid.com/hyperfollow/kismet15/resonating-grace" target="_blank" class="block text-center py-3 bg-gradient-to-r from-kismet-purple to-indigo-600 rounded-full font-bold text-sm hover:scale-[1.03] transition-all">LISTEN NOW</a>
+                        <a href="https://www.instagram.com/kismet.vocal.project/" target="_blank" class="block text-center py-3 border border-kismet-pink text-kismet-pink rounded-full font-bold text-sm hover:bg-kismet-pink/10 transition-all">WATCH VIDEO</a>
                     </div>
                 </div>
 
-                <!-- Midnight Rain Step -->
                 <div class="bg-kismet-dark rounded-3xl p-8 border border-gray-800 flex flex-col justify-between">
                     <div>
                         <img src="Midnight Rain Step.png" class="w-48 h-40 rounded-xl mb-6 mx-auto object-cover shadow-lg" onerror="this.src='https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
                         <h3 class="text-2xl text-white font-bold text-center leading-tight">Midnight Rain Step<br><span class="text-lg font-normal text-gray-400">（ミッドナイト・レイン・ステップ）</span></h3>
-                        <p class="text-sm text-kismet-purple font-bold text-center mt-4 uppercase">2nd Digital Single</p>
+                        <p class="text-sm text-kismet-purple font-bold text-center mt-4">2nd Digital Single</p>
                     </div>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
-                        <a href="https://distrokid.com/hyperfollow/kismet15/midnight-rain-step" target="_blank" class="block text-center py-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full font-bold text-sm hover:scale-[1.03] transition-all uppercase">Pre-Save Now</a>
-                        <a href="https://www.instagram.com/p/DYjlfa4sTj8/" target="_blank" class="block text-center py-3 border border-kismet-pink text-kismet-pink rounded-full font-bold text-sm hover:bg-kismet-pink/10 transition-all uppercase">Watch Reel</a>
+                        <a href="https://distrokid.com/hyperfollow/kismet15/midnight-rain-step" target="_blank" class="block text-center py-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full font-bold text-sm hover:scale-[1.03] transition-all">PRE-SAVE NOW</a>
+                        <a href="https://www.instagram.com/kismet.vocal.project/" target="_blank" class="block text-center py-3 border border-kismet-pink text-kismet-pink rounded-full font-bold text-sm hover:bg-kismet-pink/10 transition-all">WATCH VIDEO</a>
                     </div>
                 </div>
 
-                <!-- Velvet Neon -->
                 <div class="bg-kismet-dark rounded-3xl p-8 border border-gray-800 flex flex-col justify-between">
                     <div>
-                        <img src="Velvet Neon.png" class="w-48 h-40 rounded-xl mb-6 mx-auto object-cover shadow-lg" onerror="this.src='https://images.unsplash.com/photo-1518609878373-06d740f60d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
+                        <img src="Velvet Neon.png" class="w-40 h-40 rounded-xl mb-6 mx-auto object-cover shadow-lg" onerror="this.src='https://images.unsplash.com/photo-1518609878373-06d740f60d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
                         <h3 class="text-2xl text-white font-bold text-center leading-tight">Velvet Neon<br><span class="text-lg font-normal text-gray-400">（ベルベット・ネオン）</span></h3>
-                        <p class="text-sm text-kismet-purple font-bold text-center mt-4 uppercase">3rd Digital Single</p>
+                        <p class="text-sm text-kismet-purple font-bold text-center mt-4">3rd Digital Single</p>
                     </div>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
-                        <a href="https://distrokid.com/hyperfollow/kismet15/velvet-neon" target="_blank" class="block text-center py-3 bg-gradient-to-r from-kismet-purple to-indigo-600 rounded-full font-bold text-sm hover:scale-[1.03] transition-all uppercase">Listen Now</a>
-                        <a href="https://www.instagram.com/p/DY-y6CVM3dy/" target="_blank" class="block text-center py-3 border border-kismet-pink text-kismet-pink rounded-full font-bold text-sm hover:bg-kismet-pink/10 transition-all uppercase">Watch Reel</a>
+                        <a href="https://distrokid.com/hyperfollow/kismet15/velvet-neon" target="_blank" class="block text-center py-3 bg-gradient-to-r from-kismet-purple to-indigo-600 rounded-full font-bold text-sm hover:scale-[1.03] transition-all">LISTEN NOW</a>
+                        <a href="https://www.instagram.com/kismet.vocal.project/" target="_blank" class="block text-center py-3 border border-kismet-pink text-kismet-pink rounded-full font-bold text-sm hover:bg-kismet-pink/10 transition-all">WATCH VIDEO</a>
                     </div>
                 </div>
 
-                <!-- Midnight Exhale -->
                 <div class="bg-kismet-dark rounded-3xl p-8 border border-gray-800 flex flex-col justify-between">
                     <div>
                         <img src="Midnight Exhale.jpg" class="w-48 h-40 rounded-xl mb-6 mx-auto object-cover shadow-lg" onerror="this.src='https://images.unsplash.com/photo-1518609878373-06d740f60d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
                         <h3 class="text-2xl text-white font-bold text-center leading-tight">Midnight Exhale<br><span class="text-lg font-normal text-gray-400">（ミッドナイト・エクスヘイル）</span></h3>
-                        <p class="text-sm text-kismet-purple font-bold text-center mt-4 uppercase">4th Digital Single</p>
+                        <p class="text-sm text-kismet-purple font-bold text-center mt-4">4th Digital Single</p>
                     </div>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
-                        <a href="https://distrokid.com/hyperfollow/kismet15/midnight-exhale" target="_blank" class="block text-center py-3 bg-gradient-to-r from-kismet-purple to-indigo-600 rounded-full font-bold text-sm hover:scale-[1.03] transition-all uppercase">Listen Now</a>
-                        <a href="https://www.instagram.com/p/DY-v8JqsBBF/" target="_blank" class="block text-center py-3 border border-kismet-pink text-kismet-pink rounded-full font-bold text-sm hover:bg-kismet-pink/10 transition-all uppercase">Watch Reel</a>
+                        <a href="https://distrokid.com/hyperfollow/kismet15/midnight-exhale" target="_blank" class="block text-center py-3 bg-gradient-to-r from-kismet-purple to-indigo-600 rounded-full font-bold text-sm hover:scale-[1.03] transition-all">LISTEN NOW</a>
+                        <a href="https://www.instagram.com/kismet.vocal.project/" target="_blank" class="block text-center py-3 border border-kismet-pink text-kismet-pink rounded-full font-bold text-sm hover:bg-kismet-pink/10 transition-all">WATCH VIDEO</a>
                     </div>
                 </div>
 
@@ -169,6 +157,7 @@
     </footer>
 
     <script>lucide.createIcons();</script>
-    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "268bbaf02e0c4bb7869c9d012a7149cc"}'></script>
+        <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "268bbaf02e0c4bb7869c9d012a7149cc"}'></script><!-- End Cloudflare Web Analytics -->
+
 </body>
 </html>
