@@ -6,21 +6,20 @@
     <title>KISMET | Official Website</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Merriweather:ital,wght@0,700;1,700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['"Noto Serif JP"', 'serif'],
-                        heading: ['Merriweather', 'serif'],
+                        sans: ['"Noto Sans JP"', 'sans-serif'],
                         handwriting: ['Caveat', 'cursive'],
                     },
                     colors: {
                         kismet: {
                             purple: '#9b5de5',
-                            pink: '#f15bb5',
                             dark: '#121212',
+                            gray: '#2d2d2d'
                         }
                     }
                 }
@@ -29,116 +28,126 @@
     </script>
     <style>
         body { background-color: #121212; color: #f3f4f6; scroll-behavior: smooth; }
+        .hero-overlay { background: linear-gradient(to bottom, rgba(18,18,18,0.3) 0%, rgba(18,18,18,1) 100%); }
         .glow-text { text-shadow: 0 0 20px rgba(155, 93, 229, 0.6); }
-        .btn-gradient { background: linear-gradient(90deg, #9b5de5, #f15bb5); }
-        .icon-glow:hover { filter: drop-shadow(0 0 8px #9b5de5); transform: scale(1.1); transition: all 0.3s; }
+        .icon-glow:hover { filter: drop-shadow(0 0 8px rgba(155, 93, 229, 0.8)); transform: scale(1.1); transition: all 0.3s; }
     </style>
 </head>
 <body class="antialiased">
-
     <!-- NAVIGATION -->
-    <nav class="fixed w-full z-50 bg-black/60 backdrop-blur-lg border-b border-white/10">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <a href="#" class="font-handwriting text-4xl text-white tracking-widest glow-text">KISMET</a>
-            <div class="flex items-center space-x-8 text-sm font-bold tracking-tighter">
-                <a href="#music" class="hover:text-kismet-purple transition-colors">MUSIC</a>
-                <a href="https://www.instagram.com/kismet.vocal.project/" target="_blank" class="icon-glow"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+    <nav class="fixed w-full z-50 bg-black/50 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="#home" class="font-handwriting text-4xl text-white tracking-widest hover:text-kismet-purple transition-colors">KISMET</a>
+                <div class="flex items-center space-x-6">
+                    <div class="hidden md:flex space-x-8 mr-6">
+                        <a href="#home" class="text-gray-300 hover:text-white transition-colors text-xs font-bold tracking-widest">HOME</a>
+                        <a href="#music" class="text-gray-300 hover:text-white transition-colors text-xs font-bold tracking-widest">MUSIC</a>
+                    </div>
+                    <div class="flex items-center space-x-5 border-l border-gray-700 pl-5">
+                        <a href="https://www.instagram.com/kismet.vocal.project/" target="_blank" class="icon-glow text-kismet-purple">
+                            <i data-lucide="instagram" class="w-6 h-6"></i>
+                        </a>
+                        <a href="https://x.com/KismetVocal" target="_blank" class="icon-glow text-kismet-purple">
+                            <i data-lucide="x" class="w-6 h-6"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
 
     <!-- HERO SECTION -->
-    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+    <header id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img src="Summer Mirage.jpeg" class="w-full h-full object-cover opacity-40" alt="Summer Mirage Background">
-            <div class="absolute inset-0 bg-gradient-to-b from-transparent to-kismet-dark"></div>
+            <img src="jacket.png" class="w-full h-full object-cover opacity-60" alt="Kismet Background">
+            <div class="absolute inset-0 hero-overlay"></div>
         </div>
         <div class="relative z-10 text-center px-4">
-            <h1 class="font-heading text-6xl md:text-8xl mb-4 glow-text italic">KISMET</h1>
-            <p class="font-heading text-lg md:text-xl text-gray-300 italic tracking-widest">May Kismet's voices reach those who need them.</p>
+            <h1 class="font-handwriting text-7xl md:text-9xl mb-4 glow-text tracking-tighter">KISMET</h1>
+            <p class="text-lg md:text-xl text-gray-300 italic tracking-[0.3em] font-light">May Kismet's voices reach those who need them.</p>
         </div>
     </header>
 
     <!-- MUSIC SECTION -->
-    <section id="music" class="py-24 px-6 max-w-7xl mx-auto">
-        <h2 class="font-handwriting text-5xl mb-16 text-center text-kismet-purple">Latest Release</h2>
+    <section id="music" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <h2 class="font-handwriting text-5xl mb-16 text-center text-white tracking-widest">Music</h2>
         
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             
-            <!-- MAIN: Summer Mirage Album -->
-            <div class="bg-white/5 rounded-3xl p-8 border border-white/10 flex flex-col justify-between hover:border-kismet-purple/50 transition-all shadow-2xl">
+            <!-- 1. Summer Mirage (統合ブロック) -->
+            <div class="bg-kismet-dark rounded-3xl p-8 border border-gray-800 flex flex-col justify-between">
                 <div>
-                    <img src="Summer Mirage.jpeg" class="w-full aspect-square rounded-2xl mb-8 object-cover shadow-lg" alt="Summer Mirage Album Art">
-                    <h3 class="font-heading text-3xl mb-2 italic">Summer Mirage<br><span class="text-xl font-sans font-normal text-gray-400">（サマー・ミラージュ）</span></h3>
-                    <p class="text-kismet-purple font-bold text-sm uppercase tracking-widest mb-6">1st Digital Album</p>
+                    <img src="Summer Mirage.jpeg" class="w-48 h-40 rounded-xl mb-6 mx-auto object-cover shadow-lg" onerror="this.src='https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
+                    <h3 class="text-2xl text-white font-bold text-center leading-tight">
+                        Summer Mirage<br>
+                        <span class="text-lg font-normal text-gray-400">（サマー・ミラージュ）</span>
+                    </h3>
+                    <p class="text-sm text-kismet-purple font-bold text-center mt-4">1st Digital Album</p>
                 </div>
-                <div class="grid grid-cols-2 gap-4">
-                    <a href="https://distrokid.com/hyperfollow/kismetofficial/summer-mirage" target="_blank" class="btn-gradient text-center py-4 rounded-full font-bold text-sm hover:opacity-90 transition-all">LISTEN NOW</a>
-                    <a href="https://www.instagram.com/kismet.vocal.project/" target="_blank" class="border border-kismet-pink text-kismet-pink text-center py-4 rounded-full font-bold text-sm hover:bg-kismet-pink/10 transition-all">WATCH VIDEO</a>
+                <div class="grid grid-cols-2 gap-4 mt-8">
+                    <a href="https://distrokid.com/hyperfollow/kismetofficial/summer-mirage" target="_blank" class="block text-center py-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full font-bold text-sm hover:scale-[1.03] transition-all">LISTEN NOW</a>
+                    <a href="https://www.instagram.com/kismet.vocal.project/" target="_blank" class="block text-center py-3 border border-kismet-pink text-kismet-pink rounded-full font-bold text-sm hover:bg-kismet-pink/10 transition-all">WATCH VIDEO</a>
+                </div>
+            </div>
+
+            <!-- 2. Resonating Grace -->
+            <div class="bg-kismet-dark rounded-3xl p-8 border border-gray-800 flex flex-col justify-between">
+                <div>
+                    <img src="resonating_grace.png" class="w-48 h-40 rounded-xl mb-6 mx-auto shadow-lg object-cover" onerror="this.src='https://images.unsplash.com/photo-1518609878373-06d740f60d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
+                    <h3 class="text-2xl text-white font-bold text-center leading-tight">Resonating Grace<br><span class="text-lg font-normal text-gray-400">（レゾネイティング・グレイス）</span></h3>
+                    <p class="text-sm text-kismet-purple font-bold text-center mt-4">1st Digital Single</p>
+                </div>
+                <div class="grid grid-cols-2 gap-4 mt-8">
+                    <a href="https://distrokid.com/hyperfollow/kismet15/resonating-grace" target="_blank" class="block text-center py-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full font-bold text-sm hover:scale-[1.03] transition-all">LISTEN NOW</a>
+                    <a href="https://www.instagram.com/p/DYyZPiAMAKY/" target="_blank" class="block text-center py-3 border border-kismet-pink text-kismet-pink rounded-full font-bold text-sm hover:bg-kismet-pink/10 transition-all">WATCH VIDEO</a>
                 </div>
             </div>
 
-            <!-- OTHER TRACKS GRID -->
-            <div class="space-y-8">
-                <!-- Resonating Grace -->
-                <div class="bg-white/5 rounded-2xl p-6 border border-white/10 flex items-center space-x-6">
-                    <img src="jacket.png" class="w-24 h-24 rounded-lg object-cover" alt="Resonating Grace">
-                    <div class="flex-1">
-                        <h4 class="font-heading italic">Resonating Grace</h4>
-                        <p class="text-xs text-kismet-purple font-bold">1st Digital Single</p>
-                        <div class="flex space-x-4 mt-4 text-xs font-bold">
-                            <a href="https://distrokid.com/hyperfollow/kismet15/resonating-grace" class="text-gray-300 hover:text-white underline">LISTEN</a>
-                            <a href="https://www.instagram.com/p/DYyZPiAMAKY/" class="text-kismet-pink hover:opacity-80">WATCH VIDEO</a>
-                        </div>
-                    </div>
+            <!-- 3. Velvet Neon -->
+            <div class="bg-kismet-dark rounded-3xl p-8 border border-gray-800 flex flex-col justify-between">
+                <div>
+                    <img src="Velvet Neon.png" class="w-48 h-40 rounded-xl mb-6 mx-auto object-cover shadow-lg" onerror="this.src='https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
+                    <h3 class="text-2xl text-white font-bold text-center leading-tight">Velvet Neon<br><span class="text-lg font-normal text-gray-400">（ベルベット・ネオン）</span></h3>
+                    <p class="text-sm text-kismet-purple font-bold text-center mt-4">3rd Digital Single</p>
                 </div>
-
-                <!-- Velvet Neon -->
-                <div class="bg-white/5 rounded-2xl p-6 border border-white/10 flex items-center space-x-6">
-                    <img src="Velvet Neon.png" class="w-24 h-24 rounded-lg object-cover" alt="Velvet Neon" onerror="this.src='jacket.png'">
-                    <div class="flex-1">
-                        <h4 class="font-heading italic">Velvet Neon</h4>
-                        <p class="text-xs text-kismet-purple font-bold">3rd Digital Single</p>
-                        <div class="flex space-x-4 mt-4 text-xs font-bold">
-                            <a href="https://distrokid.com/hyperfollow/kismet15/velvet-neon" class="text-gray-300 hover:text-white underline">LISTEN</a>
-                            <a href="https://www.instagram.com/p/DY-y6CVM3dy/" class="text-kismet-pink hover:opacity-80">WATCH VIDEO</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Midnight Exhale -->
-                <div class="bg-white/5 rounded-2xl p-6 border border-white/10 flex items-center space-x-6">
-                    <img src="Midnight Exhale.jpg" class="w-24 h-24 rounded-lg object-cover" alt="Midnight Exhale" onerror="this.src='jacket.png'">
-                    <div class="flex-1">
-                        <h4 class="font-heading italic">Midnight Exhale</h4>
-                        <p class="text-xs text-kismet-purple font-bold">4th Digital Single</p>
-                        <div class="flex space-x-4 mt-4 text-xs font-bold">
-                            <a href="https://distrokid.com/hyperfollow/kismet15/midnight-exhale" class="text-gray-300 hover:text-white underline">LISTEN</a>
-                            <a href="https://www.instagram.com/p/DY-v8JqsBBF/" class="text-kismet-pink hover:opacity-80">WATCH VIDEO</a>
-                        </div>
-                    </div>
+                <div class="grid grid-cols-2 gap-4 mt-8">
+                    <a href="https://distrokid.com/hyperfollow/kismet15/velvet-neon" target="_blank" class="block text-center py-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full font-bold text-sm hover:scale-[1.03] transition-all">LISTEN NOW</a>
+                    <a href="https://www.instagram.com/p/DY-y6CVM3dy/" target="_blank" class="block text-center py-3 border border-kismet-pink text-kismet-pink rounded-full font-bold text-sm hover:bg-kismet-pink/10 transition-all">WATCH VIDEO</a>
                 </div>
             </div>
+
+            <!-- 4. Midnight Exhale -->
+            <div class="bg-kismet-dark rounded-3xl p-8 border border-gray-800 flex flex-col justify-between">
+                <div>
+                    <img src="Midnight Exhale.jpg" class="w-48 h-40 rounded-xl mb-6 mx-auto object-cover shadow-lg" onerror="this.src='https://images.unsplash.com/photo-1518609878373-06d740f60d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
+                    <h3 class="text-2xl text-white font-bold text-center leading-tight">Midnight Exhale<br><span class="text-lg font-normal text-gray-400">（ミッドナイト・エクスヘイル）</span></h3>
+                    <p class="text-sm text-kismet-purple font-bold text-center mt-4">4th Digital Single</p>
+                </div>
+                <div class="grid grid-cols-2 gap-4 mt-8">
+                    <a href="https://distrokid.com/hyperfollow/kismet15/midnight-exhale" target="_blank" class="block text-center py-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full font-bold text-sm hover:scale-[1.03] transition-all">LISTEN NOW</a>
+                    <a href="https://www.instagram.com/p/DY-v8JqsBBF/" target="_blank" class="block text-center py-3 border border-kismet-pink text-kismet-pink rounded-full font-bold text-sm hover:bg-kismet-pink/10 transition-all">WATCH VIDEO</a>
+                </div>
+            </div>
+
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="py-12 border-t border-white/5 text-center">
+    <footer class="py-12 border-t border-gray-800 text-center">
         <p class="text-gray-500 text-sm tracking-widest uppercase mb-6">produced by: Kismet</p>
-        
-        <!-- SNS HUB -->
         <div class="flex justify-center space-x-8 mb-8">
-            <a href="https://www.instagram.com/kismet.vocal.project/" target="_blank" class="icon-glow text-gray-400 hover:text-kismet-purple transition-all">
-                <i data-lucide="instagram" class="w-8 h-8" stroke-width="1.5"></i>
+            <a href="https://www.instagram.com/kismet.vocal.project/" target="_blank" class="icon-glow text-kismet-purple">
+                <i data-lucide="instagram" class="w-8 h-8"></i>
             </a>
-            <a href="https://x.com/KismetVocal" target="_blank" class="icon-glow text-gray-400 hover:text-kismet-purple transition-all">
-                <i data-lucide="x" class="w-8 h-8" stroke-width="1.5"></i>
+            <a href="https://x.com/KismetVocal" target="_blank" class="icon-glow text-kismet-purple">
+                <i data-lucide="x" class="w-8 h-8"></i>
             </a>
-            <a href="https://www.tiktok.com/@kismetproject" target="_blank" class="icon-glow text-gray-400 hover:text-kismet-purple transition-all">
-                <i data-lucide="music-2" class="w-8 h-8" stroke-width="1.5"></i>
+            <a href="https://www.tiktok.com/@kismetproject" target="_blank" class="icon-glow text-kismet-purple">
+                <i data-lucide="music-2" class="w-8 h-8"></i>
             </a>
         </div>
-        <p class="text-xs text-gray-600 font-sans tracking-tighter">© 2026 KISMET Vocal Project. All rights reserved.</p>
+        <p class="text-xs text-gray-600">© 2026 KISMET Vocal Project. All rights reserved.</p>
     </footer>
 
     <script>
